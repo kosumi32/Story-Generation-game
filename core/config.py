@@ -13,7 +13,7 @@ class Settings(BaseSettings):
     DEBUG: bool = False
 
     ALLOW_ORIGINS: str = ""
-    OPEN_AI_API_KEY: str
+    OPENAI_API_KEY: str
 
 
     @field_validator('ALLOW_ORIGINS')   # tell pydantic to use this function to process ALLOW_ORIGINS field
